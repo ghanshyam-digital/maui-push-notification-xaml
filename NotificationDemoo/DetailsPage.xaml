@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotificationDemoo.DetailsPage"
+             Title="Notification Details"
+             BackgroundColor="#FAFAFA">
+
+    <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+        <Image Source="notification.png"
+               HeightRequest="100"
+               Aspect="AspectFit" />
+
+        <Label x:Name="MessageLabel"
+               Text="🎉 You tapped the notification!"
+               FontSize="22"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#444" />
+
+        <Label Text="This page was opened from the push notification."
+               FontSize="14"
+               TextColor="Gray"
+               HorizontalTextAlignment="Center"
+               WidthRequest="250" />
+    </VerticalStackLayout>
+</ContentPage>
